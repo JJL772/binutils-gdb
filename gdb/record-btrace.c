@@ -39,6 +39,7 @@
 #include "event-loop.h"
 #include "inf-loop.h"
 #include "vec.h"
+#include "minmax.h"
 
 /* The target_ops of record-btrace.  */
 static struct target_ops record_btrace_ops;

@@ -40,6 +40,7 @@
 #include "tracepoint.h"
 #include "cp-abi.h"
 #include "user-regs.h"
+#include "minmax.h"
 
 /* Prototypes for exported functions.  */
 

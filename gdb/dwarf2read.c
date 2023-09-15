@@ -74,6 +74,8 @@
 #include <fcntl.h>
 #include <sys/types.h>
 
+#include "minmax.h"
+
 typedef struct symbol *symbolp;
 DEF_VEC_P (symbolp);
 

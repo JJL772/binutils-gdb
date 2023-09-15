@@ -57,6 +57,8 @@
 
 #include <fcntl.h>
 
+#include "minmax.h"
+
 /* Prototypes for local command functions */
 
 static void complete_command (char *, int);

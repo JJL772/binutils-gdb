@@ -25,6 +25,7 @@
 #include "gdbcore.h"
 #include "dis-asm.h"
 #include "source.h"
+#include "minmax.h"
 
 /* Disassemble functions.
    FIXME: We should get rid of all the duplicate code in gdb that does

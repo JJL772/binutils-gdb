@@ -53,6 +53,7 @@
 #include "objfiles.h" /* For have_full_symbols and have_partial_symbols */
 #include "block.h"
 #include <ctype.h>
+#include "minmax.h"
 
 #define parse_type(ps) builtin_type (parse_gdbarch (ps))
 #define parse_f_type(ps) builtin_f_type (parse_gdbarch (ps))

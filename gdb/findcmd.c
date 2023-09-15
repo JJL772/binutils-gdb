@@ -24,6 +24,7 @@
 #include "value.h"
 #include "target.h"
 #include "cli/cli-utils.h"
+#include "minmax.h"
 
 /* Copied from bfd_put_bits.  */
 

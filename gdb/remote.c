@@ -72,6 +72,8 @@
 #include "btrace.h"
 #include "record-btrace.h"
 
+#include "minmax.h"
+
 /* Temp hacks for tracepoint encoding migration.  */
 static char *target_buf;
 static long target_buf_size;

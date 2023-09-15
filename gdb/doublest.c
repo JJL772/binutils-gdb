@@ -28,6 +28,7 @@
 #include "floatformat.h"
 #include "gdbtypes.h"
 #include <math.h>		/* ldexp */
+#include "minmax.h"
 
 /* The odds that CHAR_BIT will be anything but 8 are low enough that I'm not
    going to bother with trying to muck around with whether it is defined in

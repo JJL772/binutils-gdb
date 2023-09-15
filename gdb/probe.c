@@ -35,6 +35,7 @@
 #include "ax-gdb.h"
 #include "location.h"
 #include <ctype.h>
+#include "minmax.h"
 
 typedef struct bound_probe bound_probe_s;
 DEF_VEC_O (bound_probe_s);

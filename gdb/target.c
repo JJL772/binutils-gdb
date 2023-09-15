@@ -46,6 +46,8 @@
 #include "top.h"
 #include "event-top.h"
 
+#include "minmax.h"
+
 static void target_info (char *, int);
 
 static void generic_tls_error (void) ATTRIBUTE_NORETURN;

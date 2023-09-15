@@ -55,6 +55,8 @@
 #include <signal.h>
 #include "gdb_select.h"
 
+#include "minmax.h"
+
 #ifndef HAVE_SOCKLEN_T
 typedef int socklen_t;
 #endif

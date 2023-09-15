@@ -38,6 +38,7 @@
 #include "dwarf2loc.h"
 #include "dwarf2-frame.h"
 #include "compile/compile.h"
+#include "minmax.h"
 
 extern int dwarf_always_disassemble;
 

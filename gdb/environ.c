@@ -20,7 +20,7 @@
 
 #include "defs.h"
 #include "environ.h"
-
+#include "minmax.h"
 
 /* Return a new environment object.  */
 

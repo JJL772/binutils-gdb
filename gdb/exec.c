@@ -43,6 +43,7 @@
 #include <ctype.h>
 #include <sys/stat.h>
 #include "solist.h"
+#include "minmax.h"
 
 void (*deprecated_file_changed_hook) (char *);
 

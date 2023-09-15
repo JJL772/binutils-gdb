@@ -49,7 +49,7 @@
 #include "source.h"
 #include "objfiles.h"
 #include "user-regs.h"
-
+#include "minmax.h"
 /* Standard set of definitions for printing, dumping, prefixifying,
  * and evaluating expressions.  */
 

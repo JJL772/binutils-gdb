@@ -19,6 +19,7 @@
 
 #include "defs.h"
 #include "memrange.h"
+#include "minmax.h"
 
 int
 mem_ranges_overlap (CORE_ADDR start1, int len1,

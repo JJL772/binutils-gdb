@@ -31,6 +31,7 @@
 #include "compile.h"
 #include "block.h"
 #include "arch-utils.h"
+#include "minmax.h"
 
 /* Track inferior memory reserved by inferior mmap.  */
 

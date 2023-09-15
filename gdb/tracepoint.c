@@ -61,6 +61,8 @@
 #include "readline/readline.h"
 #include "readline/history.h"
 
+#include "minmax.h"
+
 /* readline defines this.  */
 #undef savestring
 

@@ -85,6 +85,8 @@
 #include "features/rs6000/powerpc-e500.c"
 #include "features/rs6000/rs6000.c"
 
+#include "minmax.h"
+
 /* Determine if regnum is an SPE pseudo-register.  */
 #define IS_SPE_PSEUDOREG(tdep, regnum) ((tdep)->ppc_ev0_regnum >= 0 \
     && (regnum) >= (tdep)->ppc_ev0_regnum \

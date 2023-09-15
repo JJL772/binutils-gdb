@@ -28,7 +28,7 @@
 #include "objfiles.h"
 #include "infcall.h"
 #include "dwarf2.h"
-
+#include "minmax.h"
 
 /* Check whether FTPYE is a (pointer to) function type that should use
    the OpenCL vector ABI.  */

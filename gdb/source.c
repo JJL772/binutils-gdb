@@ -43,6 +43,7 @@
 #include "ui-out.h"
 #include "readline/readline.h"
 #include "common/enum-flags.h"
+#include "minmax.h"
 
 #define OPEN_MODE (O_RDONLY | O_BINARY)
 #define FDOPEN_MODE FOPEN_RB

@@ -34,6 +34,7 @@
 #include "rsp-low.h"
 #include "gdbcmd.h"
 #include "cli/cli-utils.h"
+#include "minmax.h"
 
 #include <inttypes.h>
 #include <ctype.h>

@@ -81,6 +81,8 @@
 #include "mi/mi-common.h"
 #include "extension.h"
 
+#include "minmax.h"
+
 /* Enums for exception-handling support.  */
 enum exception_event_kind
 {

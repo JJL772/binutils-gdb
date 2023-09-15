@@ -25,6 +25,8 @@
 
 #include "gdb_sys_time.h"
 
+#include "minmax.h"
+
 static int
 compare_block_starting_address (const void *a, const void *b)
 {
