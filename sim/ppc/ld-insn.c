@@ -17,7 +17,7 @@
  
     */
 
-
+#define LD_INSN_C
 #include "misc.h"
 #include "lf.h"
 #include "table.h"

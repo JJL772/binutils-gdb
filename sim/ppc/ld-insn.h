@@ -200,25 +200,33 @@ extern insn_table *load_insn_table
  table_include *includes,
  cache_table **cache_rules);
 
-model *models;
-model *last_model;
+#ifdef LD_INSN_C
+#define LD_EXTERN
+#else
+#define LD_EXTERN extern
+#endif
 
-insn *model_macros;
-insn *last_model_macro;
+LD_EXTERN model *models;
+LD_EXTERN model *last_model;
 
-insn *model_functions;
-insn *last_model_function;
+LD_EXTERN insn *model_macros;
+LD_EXTERN insn *last_model_macro;
 
-insn *model_internal;
-insn *last_model_internal;
+LD_EXTERN insn *model_functions;
+LD_EXTERN insn *last_model_function;
 
-insn *model_static;
-insn *last_model_static;
+LD_EXTERN insn *model_internal;
+LD_EXTERN insn *last_model_internal;
 
-insn *model_data;
-insn *last_model_data;
+LD_EXTERN insn *model_static;
+LD_EXTERN insn *last_model_static;
 
-int max_model_fields_len;
+LD_EXTERN insn *model_data;
+LD_EXTERN insn *last_model_data;
+
+LD_EXTERN int max_model_fields_len;
+
+#undef LD_EXTERN
 
 extern void insn_table_insert_insn
 (insn_table *table,
