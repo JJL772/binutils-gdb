@@ -36,6 +36,8 @@
 #include "gdb.h"
 #include "gdb_string.h"
 
+#include "version.h"
+
 #include <ctype.h>
 #include <sys/types.h>
 #include <signal.h>
@@ -805,13 +807,25 @@ print_thread_info (struct ui_out *uiout, int requested_thread, int pid)
 	ui_out_text (uiout, "(running)\n");
       else
 	{
-	  /* The switch below puts us at the top of the stack (leaf
-	     frame).  */
-	  switch_to_thread (tp->ptid);
-	  print_stack_frame (get_selected_frame (NULL),
-			     /* For MI output, print frame level.  */
-			     ui_out_is_mi_like_p (uiout),
-			     LOCATION);
+	  /* A kludge -- I don't know how we can find out whether
+	   * we are connected to an RTEMS target agent at run-time.
+	   * Hence we use the configured --target name for now.
+	   */
+	  if ( strstr(target_name, "rtems") )
+		{
+		  printf_filtered("\n");
+		}
+	  else
+		{
+		  /* The switch below puts us at the top of the stack (leaf
+		     frame).  */
+
+		  switch_to_thread (tp->ptid);
+		  print_stack_frame (get_selected_frame (NULL),
+				     /* For MI output, print frame level.  */
+				     ui_out_is_mi_like_p (uiout),
+				     LOCATION);
+		}
 	}
 
       if (ui_out_is_mi_like_p (uiout))

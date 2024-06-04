@@ -5659,6 +5659,8 @@ send_g_packet (void)
 	fprintf_unfiltered (gdb_stdlog,
 			    "Bad register packet; fetching a new packet\n");
       getpkt (&rs->buf, &rs->buf_size, 0);
+	  if ( rs->buf[0] == 0 )
+	  	break;
     }
 
   buf_len = strlen (rs->buf);
@@ -10790,3 +10792,9 @@ Show the remote pathname for \"run\""), NULL, NULL, NULL,
   target_buf = xmalloc (target_buf_size);
 }
 
+/* need to introduce this name here ( to be
+ * seen by sed -e 's/^_initialize_.../'
+ */
+void
+_initialize_remote_rtems (void);
+#include "remote-rtems.c"

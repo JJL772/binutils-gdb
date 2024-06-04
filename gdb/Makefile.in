@@ -692,6 +692,7 @@ SFILES = ada-exp.y ada-lang.c ada-typeprint.c ada-valprint.c ada-tasks.c \
 	proc-service.list progspace.c \
 	prologue-value.c psymtab.c \
 	regcache.c reggroups.c remote.c remote-fileio.c reverse.c \
+	remote-rtems.c \
 	scm-exp.c scm-lang.c scm-valprint.c \
 	sentinel-frame.c \
 	serial.c ser-base.c ser-unix.c \
