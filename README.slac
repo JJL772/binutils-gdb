@@ -1,0 +1,9 @@
+Compiling:
+
+mkdir -p build-powerpc-rtems
+cd build-powerpc-rtems
+
+../configure --prefix="$PWD/../../../../host" --target=powerpc-rtems
+
+# Required to avoid building docs
+make MAKEINFO=true install
